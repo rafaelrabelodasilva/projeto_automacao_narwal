@@ -20,6 +20,9 @@ Ao abrir o projeto pela primeira vez, execute o seguinte comando para instalar a
 
 > 💡 Certifique-se de ter o Node.js e o npm instalados na sua máquina antes de executar este comando. Essa ação garantirá que todas as dependências necessárias sejam instaladas e o projeto esteja pronto para execução.
 
+Para abrir a interface do Cypress basta digitar o comando abaixo no terminal:
+`$ npx cypress open`
+
 # Estrutura base dos cenários
 
 No exemplo abaixo, 'Xxxx' seria substituído por uma descrição significativa do que está sendo testado. Por exemplo, se você estiver testando um formulário de login, poderia ter algo como 'Teste de login'. Dentro deste describe, você teria vários its, cada um testando um aspecto específico do login, como 'Deve permitir o login com credenciais válidas', 'Deve exibir uma mensagem de erro para credenciais inválidas', etc. Isso ajuda a manter seus testes organizados e fáceis de entender.

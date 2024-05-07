@@ -1,6 +1,6 @@
 const dadosCliente = {
   CpfCnpj: "33597676000163",
-  nome: "Cliente teste automação 09",
+  nome: "Cliente teste automação 10",
   pais: "Brazil",
   estado: "Santa Catarina",
   cidade: "Criciúma",
@@ -95,7 +95,7 @@ describe('Cliente', () => {
     cy.get(':nth-child(4) > :nth-child(6) > ul > .tbValue > .k-widget > .k-numeric-wrap > .k-formatted-value')
       .type(dadosCliente.dias)
 
-    cy.intercept('POST', 'https://cliente3automatizado.narwalsistemas.com.br/Cliente/Inserir')
+    cy.intercept('POST', '/Cliente/Inserir')
       .as('clienteSalvo')
 
     cy.get('#btnAdicionar')

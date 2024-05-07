@@ -1,0 +1,21 @@
+{
+  "name": "projeto_automacao_narwal",
+  "version": "1.0.0",
+  "description": "Projeto de automação de testes com Cypress para a aplicação Narwal",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "headless": "cypress run --headless --browser chrome"
+  },
+  "keywords": [
+    "projeto",
+    "automacao",
+    "testes",
+    "narwal"
+  ],
+  "author": "Rafael Rabelo da Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.6"
+  }
+}

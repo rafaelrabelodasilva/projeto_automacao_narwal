@@ -3,6 +3,8 @@ Cypress.Commands.add('fazLogin', () => {
   const usuario = Cypress.env('usuarioAdm')
   const senha = Cypress.env('senhaAdm')
 
+  cy.visit('/')
+
   cy.get('.login-welcome-message > span')
     .should('have.text', 'Welcome.')
 
@@ -22,7 +24,8 @@ Cypress.Commands.add('fazLogin', () => {
 })
 
 Cypress.Commands.add('validaMensagemErro', (mensagem) => {
-  cy.get('.login-input-fields > div > ul > li').should('have.text', mensagem);
+  cy.get('.login-input-fields > div > ul > li')
+    .should('have.text', mensagem);
 })
 
 Cypress.Commands.add('fazLogout', () => {
@@ -33,5 +36,6 @@ Cypress.Commands.add('fazLogout', () => {
 })
 
 Cypress.Commands.add('verificaMensagemSnackbar', (mensagem) => {
-  cy.get('.noty_message').contains(mensagem)
+  cy.get('.noty_message')
+    .contains(mensagem)
 })
